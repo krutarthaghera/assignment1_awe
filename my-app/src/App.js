@@ -8,7 +8,7 @@ function App() {
   const [values,setValues]=useState([]);
   useEffect(()=>{
     fetch(
-    "https://localhost:7005/",{mode:"cors"})
+    "https://localhost:7035/",{mode:"cors"})
                 .then((res) => res.json())
                 .then((json) => {
                     setValues(json)
@@ -21,74 +21,73 @@ function App() {
 //     var data=[
 //     {
 //         'key':0,
-//         'name':"Jatin Agrawal",
-//         'email':'jatinagrawal0801@gmail.com',
-//         'dob':'10/08/2000',
-//         'gender':'Male',
-//         'bloodgroup':'A+',
-//         'contact':'9898989898'
+//         'name':"",
+//         'manufacturedby':'',
+//         'expiredate':'',
+//         'catagory':'',
+//         'effects':'',
+//         
 //     },
-//     {'key':1,
-//         'name':"Jatin Agrawal",
-//         'email':'jatinagrawal0801@gmail.com',
-//         'dob':'10/08/2000',
-//         'gender':'Male',
-//         'bloodgroup':'A+',
-//         'contact':'9898989898'
+//     {
+//         'key':1,
+//         'name':"",
+//         'manufacturedby':'',
+//         'expiredate':'',
+//         'catagory':'',
+//         'effects':'',
+//         
 //     },
-//     {'key':2,
-//         'name':"Jatin Agrawal",
-//         'email':'jatinagrawal0801@gmail.com',
-//         'dob':'10/08/2000',
-//         'gender':'Male',
-//         'bloodgroup':'A+',
-//         'contact':'9898989898'
+//     {
+//         'key':2,
+//         'name':"",
+//         'manufacturedby':'',
+//         'expiredate':'',
+//         'catagory':'',
+//         'effects':'',
+//         
 //     },
-//     {'key':3,
-//         'name':"Jatin Agrawal",
-//         'email':'jatinagrawal0801@gmail.com',
-//         'dob':'10/08/2000',
-//         'gender':'Male',
-//         'bloodgroup':'A+',
-//         'contact':'9898989898'
+//     {
+//         'key':3,
+//         'name':"",
+//         'manufacturedby':'',
+//         'expiredate':'',
+//         'catagory':'',
+//         'effects':'',
+//         
 //     },
-//     {'key':4,
-//         'name':"Jatin Agrawal",
-//         'email':'jatinagrawal0801@gmail.com',
-//         'dob':'10/08/2000',
-//         'gender':'Male',
-//         'bloodgroup':'A+',
-//         'contact':'9898989898'
+//     {
+//         'key':4,
+//         'name':"",
+//         'manufacturedby':'',
+//         'expiredate':'',
+//         'catagory':'',
+//         'effects':'',
+//         
 //     },
-//     {'key':5,
-//         'name':"Jatin Agrawal",
-//         'email':'jatinagrawal0801@gmail.com',
-//         'dob':'10/08/2000',
-//         'gender':'Male',
-//         'bloodgroup':'A+',
-//         'contact':'9898989898'
+//     {
+//         'key'5,
+//         'name':"",
+//         'manufacturedby':'',
+//         'expiredate':'',
+//         'catagory':'',
+//         'effects':'',
+//         
 //     },
-//     {'key':6,
-//         'name':"Jatin Agrawal",
-//         'email':'jatinagrawal0801@gmail.com',
-//         'dob':'10/08/2000',
-//         'gender':'Male',
-//         'bloodgroup':'A+',
-//         'contact':'9898989898'
-//     },
+//
 // ]
+
   return (
     <div className="App">
         <nav>
-          Medical Records Management
+          Pharmacy Management
         </nav>
         <div className="table-heading">
-          <p>Name</p>
-          <p>Email</p>
-          <p>DateOfBirth</p>
-          <p>Gender</p>
-          <p>Blood Group</p>
-          <p>Contact</p>
+          <p>Drug name</p>
+          <p>Manufactured by</p>
+          <p>Expiry Date</p>
+          <p>catagory</p>
+          <p>effects</p>
+
         </div>
         <div>
 
